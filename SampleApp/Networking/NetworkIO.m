@@ -10,4 +10,9 @@
 
 @implementation NetworkIO
 
+-(NSDictionary *) getUser {
+    //call Service API, get JSON after Serialization
+    return nil;
+}
+
 @end

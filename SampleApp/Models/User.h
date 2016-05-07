@@ -10,4 +10,9 @@
 
 @interface User : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) int age;
+
+- (void)parseJson:(NSDictionary *)dictionary;
+
 @end

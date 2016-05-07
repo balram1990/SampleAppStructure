@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkIO : NSObject
+-(NSDictionary *) getUser;
 
 @end

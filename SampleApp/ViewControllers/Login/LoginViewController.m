@@ -7,7 +7,16 @@
 //
 
 #import "LoginViewController.h"
+#import "NetworkIO.h"
+#import "User.h"
 
 @implementation LoginViewController
+
+-(void)someMethod {
+    NetworkIO *net = [[NetworkIO alloc] init];
+    NSDictionary *data =  [net getUser];
+    User *aUser = [[User alloc] init];
+    [aUser parseJson:data];
+}
 
 @end

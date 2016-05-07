@@ -10,4 +10,15 @@
 
 @implementation User
 
+/*
+ {
+    "name" : "Balram Singh",
+    "age"  : 26
+ }
+ */
+-(void)parseJson:(NSDictionary *)dictionary {
+    self.name =  dictionary[@"name"];
+    self.age = [[dictionary  objectForKey:@"age"] integerValue];
+}
+
 @end
